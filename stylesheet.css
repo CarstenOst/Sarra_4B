@@ -15,58 +15,36 @@ body{
     align-items: center;
     height: 968px;
 }
-.mainIndexButton{
-    cursor: pointer;
-    width:450px;
-    height:450px;
-    background-color: blue;
-    color: var(--text-color);
-    animation: mnyColors 3s 1;
-    border: none;
-    border-radius: 500px;
-    overflow: hidden;
 
-}
-@-webkit-keyframes mnyColors {
-    0% {background-color: blue}
-    25% {background-color: darkred; color: var(--text-color);}
-    50% {background-color: #ffd700; color: var(--main-color); font-size: 30px; transform: rotateY(180deg) }
-    75% {background-color: purple; color: var(--text-color);}
-    100% {background-color: blue}
-}
-@media screen and (max-width: 414px) {
-    .mainIndexButton {
-        width: 220px; /* The width is 200px, when the viewport is 400px or smaller */
-        height: 220px;
-        animation: mnyColors2 3s 2;
-    }
-    .parent{
-        height: 736px;
-    }
-    @-webkit-keyframes mnyColors2 {
-        0% {background-color: blue}
-        25% {background-color: darkred; color: var(--text-color);}
-        50% {background-color: #ffd700; color: var(--main-color); font-size: 20px}
-        75% {background-color: purple; color: var(--text-color);}
-        100% {background-color: blue}
-}}
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.Phone -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
+
 
 #phone-size{
     width: 390px;
     height: 844px;
-    border-radius: 20px;
-    border: 1px white;
+    border-radius: 50px;
+    border: 5px black;
     color: var(--main-color);
     background-color: var(--text-color);
-    overflow: auto;
+    overflow: hidden;
     padding: 0;
 }
 #phone-notch{
     padding: 5px;
     width: 100%;
     height: 35px;
-    background-color: green;
+    background-color: black;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 #phone-nav{
     padding: 5px;
@@ -82,10 +60,58 @@ body{
     background-color: white;
     border: 1px solid black;
     margin: auto 10px; /* center vertical */
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
 }
-#phone-search-bar{
-    width: 200px;
+#phone-search-bar, #search{
+    width: 230px;
     height: 50px;
-    background-color: blue;
     margin: auto 0; /* center vertical */
+}
+
+
+
+
+
+#content{
+    background-color: black;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* scrollbar functionallity while hidden taken from this page */
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hide_scrollbar_keep_func*/
+/* Hide scrollbar for Chrome, Safari and Opera */
+#content::-webkit-scrollbar {
+    display: none;
+}
+.event_cont_parent::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#content, .event_cont_parent {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.event{
+    background-color: white;
+    display: flex;
+    max-height: 200px;
+    min-height: 80px;
+    border: black 2px solid;
+}
+.event_cont_parent{
+    display: inline-flex;
+    width: 390px;
+    overflow-x: scroll;
+    background-color: red;
+
+}
+.event_cont_child{
+    padding: 10px;
+    min-width: 370px;
+    max-width: 370px;
+    background-color: lightblue;
 }
