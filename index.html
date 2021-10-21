@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <link rel="icon" type="image/png" sizes="16x16" href="./Prosjekter/How We Roll/Bilder/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="stylesheet.css"> <!-- Felles stilark -->
     <title>Gruppe 4B</title>
+    <style>
+        body{
+
+        }
+        .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 968px;
+        }
+        .mainIndexButton{
+            cursor: pointer;
+            width:450px;
+            height:450px;
+            background-color: blue;
+            color: var(--text-color);
+            animation: mnyColors 3s 1;
+            border: none;
+            border-radius: 500px;
+            overflow: hidden;
+
+        }
+        @-webkit-keyframes mnyColors {
+            0% {background-color: blue}
+            25% {background-color: darkred; color: var(--text-color);}
+            50% {background-color: #ffd700; color: var(--main-color); font-size: 30px; transform: rotateY(180deg) }
+            75% {background-color: purple; color: var(--text-color);}
+            100% {background-color: blue}
+        }
+        @media screen and (max-width: 414px) {
+            .mainIndexButton {
+                width: 220px; /* The width is 200px, when the viewport is 400px or smaller */
+                height: 220px;
+                animation: mnyColors2 3s 2;
+            }
+            .parent{
+                height: 736px;
+            }
+            @-webkit-keyframes mnyColors2 {
+                0% {background-color: blue}
+                25% {background-color: darkred; color: var(--text-color);}
+                50% {background-color: #ffd700; color: var(--main-color); font-size: 20px}
+                75% {background-color: purple; color: var(--text-color);}
+                100% {background-color: blue}
+            }}
+
+    </style>
 </head>
 <body>
 
