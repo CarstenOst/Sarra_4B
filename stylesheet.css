@@ -76,7 +76,7 @@ body{
 
 #content{
     background-color: black;
-    height: 600px;
+    height: 630px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -106,12 +106,16 @@ body{
     display: inline-flex;
     width: 390px;
     overflow-x: scroll;
-    background-color: red;
-
 }
 .event_cont_child{
     padding: 10px;
     min-width: 370px;
     max-width: 370px;
     background-color: lightblue;
+}
+footer{
+    background-color: gold;
+    height: 60px;
+    overflow: hidden;
+    padding: 10px;
 }
