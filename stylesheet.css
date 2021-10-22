@@ -28,7 +28,7 @@ body{
 #phone-size{
     width: 100%;
     max-width: 390px;
-    height: 800px;
+    height: 800px; /* 844px for iphone 13*/
     color: var(--main-color);
     overflow: hidden;
 }
