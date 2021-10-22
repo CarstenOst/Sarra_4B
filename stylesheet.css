@@ -1,6 +1,8 @@
 :root {
     --main-color: #191919;
     --text-color: azure;
+    --phone-bg: lightblue;
+    --content-bg: white;
 }
 *{
     margin: 0;
@@ -12,8 +14,6 @@ body{
 .uber_parent {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 968px;
 }
 
 
@@ -28,10 +28,8 @@ body{
 #phone-size{
     width: 390px;
     height: 844px;
-    border-radius: 50px;
-    border: 5px black;
+
     color: var(--main-color);
-    background-color: var(--text-color);
     overflow: hidden;
     padding: 0;
 }
@@ -39,7 +37,7 @@ body{
     padding: 5px;
     width: 100%;
     height: 35px;
-    background-color: black;
+    background-color: var(--phone-bg);
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -47,27 +45,29 @@ body{
 
 }
 #phone-nav{
-    padding: 5px;
+    margin:auto;
     width: 100%;
     height: 80px;
-    background-color: red;
+    background-color: var(--phone-bg);
     overflow: hidden;
     display: flex;
+    justify-content: space-evenly;
 }
 #phone-nav-search-btn, #phone-settings{
     width: 50px;
     height: 50px;
-    background-color: white;
-    border: 1px solid black;
     margin: auto 10px; /* center vertical */
     border-radius: 50px;
     cursor: pointer;
     display: block;
 }
-#phone-search-bar, #search{
-    width: 230px;
-    height: 50px;
+#phone-search-bar{
     margin: auto 0; /* center vertical */
+}
+#search{
+    width: 100%;
+    min-width: 40px;
+    height: 30px;
 }
 
 
@@ -75,12 +75,11 @@ body{
 
 
 #content{
-    background-color: black;
     height: 630px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
-/* scrollbar functionallity while hidden taken from this page */
+/* scrollbar func hidden taken from this page */
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hide_scrollbar_keep_func*/
 /* Hide scrollbar for Chrome, Safari and Opera */
 #content::-webkit-scrollbar {
@@ -95,12 +94,14 @@ body{
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
+/* no longer code taken from link above */
 .event{
-    background-color: white;
     display: flex;
     max-height: 200px;
     min-height: 80px;
-    border: black 2px solid;
+    border: black 1px;
+    border-style: solid hidden solid hidden;
+    max-width: 390px;
 }
 .event_cont_parent{
     display: inline-flex;
@@ -111,11 +112,19 @@ body{
     padding: 10px;
     min-width: 370px;
     max-width: 370px;
-    background-color: lightblue;
+    background-color: var(--content-bg);
 }
 footer{
-    background-color: gold;
-    height: 60px;
+    background-color: var(--phone-bg);
+    height: 90px;
     overflow: hidden;
-    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+footer div{
+    vertical-align: center;
+    margin: auto;
+    cursor: pointer;
 }
