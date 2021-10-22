@@ -105,12 +105,15 @@ body{
     display: inline-flex;
     width: 390px;
     overflow-x: scroll;
+    scroll-snap-type: x mandatory; /* får cont til å snappe */
+
 }
 .event_cont_child{
     padding: 10px;
     min-width: 370px;
     max-width: 370px;
     background-color: var(--content-bg);
+    scroll-snap-align: start;
 }
 footer{
     background-color: var(--phone-bg);
