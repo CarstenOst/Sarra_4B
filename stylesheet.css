@@ -28,10 +28,8 @@ body{
 #phone-size{
     width: 390px;
     height: 844px;
-
     color: var(--main-color);
     overflow: hidden;
-    padding: 0;
 }
 #phone-notch{
     padding: 5px;
@@ -42,7 +40,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 #phone-nav{
     margin:auto;
@@ -121,7 +118,6 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-
 }
 footer div{
     vertical-align: center;
