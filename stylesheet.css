@@ -111,7 +111,8 @@ body{
 }
 .event_cont_child{
     padding: 10px 0 10px 10px;
-    min-width: 390px;
+    min-width: 380px;
+    max-width: 380px;
     background-color: var(--content-bg);
     scroll-snap-align: start;
 }
