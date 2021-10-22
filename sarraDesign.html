@@ -31,149 +31,30 @@
             </div>
         </nav>
         <main id="content">
-            <div class="event">
-                <div class="event_cont_parent">
-                    <div class="event_cont_child">
-                        <p>scroll me right</p>
-                    </div>
-                    <div class="event_cont_child">
-                        kakemann
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event_cont_parent">
-                    <div class="event_cont_child">
-                        <p>scroll me right</p>
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event_cont_parent">
-                    <div class="event_cont_child">
-                        <p>scroll me right</p>
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event_cont_parent">
-                    <div class="event_cont_child">
-                        <p>scroll me right</p>
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event_cont_parent">
-                    <div class="event_cont_child">
-                        <p>scroll me right</p>
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event_cont_parent">
-                    <div class="event_cont_child">
-                        <p>scroll me right</p>
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event_cont_parent">
-                    <div class="event_cont_child">
-                        <p>scroll me right</p>
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event_cont_parent">
-                    <div class="event_cont_child">
-                        <p>scroll me right</p>
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event_cont_parent">
-                    <div class="event_cont_child">
-                        <p>scroll me right</p>
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event_cont_parent">
-                    <div class="event_cont_child">
-                        <p>scroll me right</p>
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                </div>
-            </div>
-            <div class="event">
-                <div class="event_cont_parent">
-                    <div class="event_cont_child">
-                        <p>scroll me right</p>
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                    <div class="event_cont_child">
-                        ez
-                    </div>
-                </div>
-            </div>
+            <script>
+
+                function drawEventCont(){
+                    for(let i = 0; i <= 100; i++){
+                        let lines = '\
+            <div class="event">\
+                <div class="event_cont_parent">\
+                    <div class="event_cont_child">\
+                        <p>scroll me right'+i+'</p>\
+                    </div>\
+                    <div class="event_cont_child">\
+                        kakemann'+i+i+'\
+                    </div>\
+                    <div class="event_cont_child">\
+                        ez'+i+i+i+'\
+                    </div>\
+                    <div class="event_cont_child">\
+                        ez'+i+i+i+i+'\
+                    </div>\
+                </div>\
+            </div>';
+                        document.write(lines);}}
+                drawEventCont()
+            </script>
         </main>
         <footer>
             <div>
@@ -190,26 +71,7 @@
 </div>
 
 
-<script>
-    /*
-    let msgs = "do you have smelly feet?";
-    let lines = '\
-            <div class="event">\
-                <div class="event_cont_parent">\
-                    <div class="event_cont_child">\
-                        <p>scroll me right</p>\
-                    </div>\
-                    <div class="event_cont_child">\
-                        kakemann\
-                    </div>\
-                    <div class="event_cont_child">\
-                        ez\
-                    </div>\
-                </div>\
-            </div>';
-    document.write(lines);
-    */
-</script>
+
 
 </body>
 </html>
