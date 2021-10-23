@@ -73,7 +73,7 @@ body{
 
 
 #content{
-    height: 78.34%;/*630/844*/
+    height: 79%;/*630/844*/
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: var(--content-bg);
@@ -115,7 +115,7 @@ body{
 }
 footer{
     background-color: var(--phone-bg);
-    height: 10.66%; /*90/844*/
+    height: 10%; /*90/844*/
     min-height: 60px;
     overflow: hidden;
     width: 100%;
