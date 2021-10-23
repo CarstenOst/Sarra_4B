@@ -112,6 +112,7 @@ body{
     display: inline-flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory; /* får cont til å snappe */
+    padding: 0 10px;
 }
 .event_cont_child{
     min-width: 100%;
