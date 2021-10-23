@@ -29,14 +29,14 @@ body{
     width: 100%;
     max-width: 390px;
     height: 100vh; /* 844px for iphone 13*/
-    min-height: 500px;
+    min-height: 640px;
     max-height: 1000px;
     color: var(--main-color);
     overflow: hidden;
 }
 #phone-notch{
-    padding: 5px;
     width: 100%;
+    padding: 5px 0 0 0;
     height: 3%;/*35/844*/
     min-height: 30px;
     background-color: var(--phone-bg);
@@ -74,7 +74,7 @@ body{
 
 
 #content{
-    height: 71%;/*630/844*/
+    height: 78.34%;/*630/844*/
     overflow-y: scroll;
     overflow-x: hidden;
 }
