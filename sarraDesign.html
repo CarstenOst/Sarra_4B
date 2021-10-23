@@ -11,22 +11,21 @@
 <body>
 <div class="uber_parent">
     <div id="phone-size">
+
         <header id="phone-notch">
             <img src="icon/Sarra_Logo_HvitBG.png" alt="sarra-logo" height="30px">
         </header>
 
         <nav id="phone-nav">
-            <div id="phone-nav-search-btn">
+            <div id="phone-nav-search-btn" onclick="window.location.reload()">
                 <img src="icon/search_icon.png" height="35px" alt="search_icon">
             </div>
-
             <div id="phone-search-bar">
                 <form><label for="search" style="display: none">none</label> <!-- la til label for at intellij skulle slutte å grine, bruker heller placeholder :)-->
                     <input id="search" name="search" placeholder="search" type="text">
                 </form>
             </div>
-
-            <div id="phone-settings">
+            <div id="phone-settings" onclick="location='settings.html'">
                 <img src="icon/settings_icon.png" height="35px" alt="settings_icon">
             </div>
         </nav>
@@ -48,8 +47,7 @@
                     </div>
                 </div>
             </div>
-            <script>
-
+            <script> /* Skriver innholdet */
                 function drawEventCont(){
                     for(let i = 0; i <= 100; i++){
                         let lines = '\
@@ -73,25 +71,22 @@
                 drawEventCont()
             </script>
         </main>
+
         <footer>
-            <div>
+            <div onclick="location='myEvents.html'">
                 <!--suppress CheckImageSize -->
                 <img src="icon/calendar_icon.png" alt="calendar" height="35px">
             </div>
-            <div>
+            <div onclick="location='index.html'">
                 <!--suppress CheckImageSize -->
                 <img src="icon/home_icon.png" alt="home" height="45">
             </div>
-            <div>
+            <div onclick="location='myFriends.html'">
                 <!--suppress CheckImageSize -->
                 <img src="icon/friends_icon.png" alt="friends" height="35">
             </div>
         </footer>
     </div>
 </div>
-
-
-
-
 </body>
 </html>
