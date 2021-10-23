@@ -1,5 +1,6 @@
 :root {
-    --main-color: #48412d; /* Her Preben, fargen din  */
+    --main-color: #191919;
+    --preben-color: #48412d; /* Her Preben, fargen din  */
     --text-color: azure;
     --phone-bg: lightblue;
     --content-bg: white;
@@ -26,11 +27,11 @@ body{
 
 
 #phone-size{
+    background-color: var(--phone-bg);
     width: 100%;
     max-width: 100%;
     height: 100vh; /* 844px for iphone 13*/
     min-height: 200px;
-    max-height: 1000px;
     color: var(--main-color);
     overflow: hidden;
 }
@@ -75,6 +76,7 @@ body{
     height: 78.34%;/*630/844*/
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: var(--content-bg);
 }
 /* scrollbar func hidden taken from this page */
 /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hide_scrollbar_keep_func*/
@@ -109,7 +111,6 @@ body{
 .event_cont_child{
     padding: 10px 0 0 10px;
     min-width: 100%;
-    background-color: var(--content-bg);
     scroll-snap-align: start;
 }
 footer{
