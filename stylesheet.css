@@ -62,9 +62,13 @@ body{
     margin: auto;
 }
 #page-name{
-    display: flex;
+    display: block;
+    min-width: 150px;
+    overflow: hidden;
+    text-align: center;
 }
 #p-name-txt{
+    min-width: 62px;
     padding: 10px;
     margin: 5px 0 10px 0;
     border-radius: 20px;
