@@ -62,7 +62,7 @@ body{
     height: 30px;
     margin: auto;
 }
-#page-name, #phone-search-bar{
+#page-name{
     display: block;
     min-width: 150px;
     overflow: hidden;
