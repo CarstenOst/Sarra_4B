@@ -40,21 +40,20 @@ body{
 #phone-nav{
     width: 100%;
     height: 7%; /*80/844*/
-    min-height: 40px;
+    min-height: 58px;
     margin:auto;
     background-color: var(--phone-bg);
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
 }
-#phone-nav-search-btn, #phone-settings{
+#phone-nav-search-btn, #phone-settings, #page-name {
     margin: auto; /* center vertical */
     cursor: pointer;
     display: block;
 }
 #phone-search-bar{
     margin: auto; /* center vertical */
-    width: 200px;
 }
 #search{
     width: 100%;
@@ -62,7 +61,16 @@ body{
     height: 30px;
     margin: auto;
 }
+#page-name{
+    display: flex;
+}
+#p-name-txt{
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border-radius: 20px;
+    background-color: var(--content-bg);
 
+}
 
 #content{
     height: 79%;/*630/844*/
