@@ -54,6 +54,7 @@ body{
 }
 #phone-search-bar{
     margin: auto; /* center vertical */
+    max-width: 150px;
 }
 #search{
     width: 100%;
@@ -61,7 +62,7 @@ body{
     height: 30px;
     margin: auto;
 }
-#page-name{
+#page-name, #phone-search-bar{
     display: block;
     min-width: 150px;
     overflow: hidden;
