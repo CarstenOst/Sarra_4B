@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"> <!-- Felles stilark -->
+    <title>My Events</title>
+</head>
+<body>
+<div class="uber_parent">
+    <div id="phone-size">
+
+        <header id="phone-notch">
+            <img src="icon/Sarra_Logo_HvitBG.png" alt="sarra-logo" height="30px">
+        </header>
+
+        <nav id="phone-nav"><!-- onclick js toggler bare search bar :/ jeg er altfor lat altså-->
+            <div id="phone-nav-search-btn" onclick="kake=document.getElementById('phone-search-bar'); if (kake.style.display === 'block'){kake.style.display = 'none'}else{kake.style.display = 'block';}">
+                <img src="icon/search_icon.png" height="35px" alt="search_icon">
+            </div>
+            <div id="phone-search-bar" style="display: none; max-width: 50px">
+                <form><label for="search" style="display: none">none</label> <!-- la til label for at intellij skulle slutte å grine, bruker heller placeholder :)-->
+                    <input id="search" name="search" placeholder="search" type="text">
+                </form>
+            </div>
+            <div id="page-name">
+                <h2 id="p-name-txt">My Events</h2>
+            </div>
+            <div id="phone-settings" onclick="location='settings.html'">
+                <img src="icon/settings_icon.png" height="35px" alt="settings_icon">
+            </div>
+        </nav>
+
+        <main id="content">
+            <div class="event">
+                <div class="event_cont_parent">
+                    <div class="event_cont_child">
+                        <p>scroll me right</p>
+                    </div>
+                    <div class="event_cont_child">
+                        <img src="icon/search_icon.png" style="max-height: 200px" alt="geoLocator">
+                    </div>
+                    <div class="event_cont_child">
+                        ez
+                    </div>
+                    <div class="event_cont_child">
+                        ez
+                    </div>
+                </div>
+            </div>
+            <script> /* Skriver innholdet */
+            function drawEventCont(){
+                for(let i = 0; i <= 100; i++){
+                    let lines = '\
+            <div class="event">\
+                <div class="event_cont_parent">\
+                    <div class="event_cont_child">\
+                        <p>scroll me right'+i+'</p>\
+                    </div>\
+                    <div class="event_cont_child">\
+                        kakemann'+i+i+'\
+                    </div>\
+                    <div class="event_cont_child">\
+                        ez'+i+i+i+'\
+                    </div>\
+                    <div class="event_cont_child">\
+                        ez'+i+i+i+i+'\
+                    </div>\
+                </div>\
+            </div>';
+                    document.write(lines);}}
+            drawEventCont()
+            </script>
+        </main>
+
+        <footer>
+            <div onclick="location='myEvents.html'">
+                <!--suppress CheckImageSize -->
+                <img src="icon/calendar_icon.png" alt="calendar" height="45">
+            </div>
+            <div onclick="location='index.html'">
+                <!--suppress CheckImageSize -->
+                <img src="icon/home_icon.png" alt="home" height="35">
+            </div>
+            <div onclick="location='myFriends.html'">
+                <!--suppress CheckImageSize -->
+                <img src="icon/friends_icon.png" alt="friends" height="35">
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
