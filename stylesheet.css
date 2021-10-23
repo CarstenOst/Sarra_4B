@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     background-color: var(--main-color);
 }
@@ -15,7 +16,6 @@ body{
     display: flex;
     justify-content: center;
 }
-
 
 
 /* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-. */
@@ -28,7 +28,9 @@ body{
 #phone-size{
     width: 100%;
     max-width: 390px;
-    height: 800px; /* 844px for iphone 13*/
+    height: 100vh; /* 844px for iphone 13*/
+    min-height: 500px;
+    max-height: 1000px;
     color: var(--main-color);
     overflow: hidden;
 }
@@ -53,20 +55,18 @@ body{
     justify-content: space-evenly;
 }
 #phone-nav-search-btn, #phone-settings{
-    width: 50px;
-    height: 50px;
-    margin: auto 10px; /* center vertical */
-    border-radius: 50px;
+    margin: auto; /* center vertical */
     cursor: pointer;
     display: block;
 }
 #phone-search-bar{
-    margin: auto 0; /* center vertical */
+    margin: auto; /* center vertical */
 }
 #search{
     width: 100%;
-    min-width: 40px;
+    min-width: 35px;
     height: 30px;
+    margin: auto;
 }
 
 
@@ -125,7 +125,6 @@ footer{
     justify-content: space-evenly;
 }
 footer div{
-    vertical-align: center;
     margin: auto;
     cursor: pointer;
 }
