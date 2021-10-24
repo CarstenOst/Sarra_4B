@@ -17,7 +17,7 @@ body{
     display: flex;
     justify-content: center;
 }
-
+/* blabla ikke bland class og id... Pffft, jeg blander alt. Hmm går og blander meg litt saft. */
 #phone-size{
     width: 100%;
     max-width: 100%;
@@ -77,9 +77,7 @@ body{
     margin: 5px 0 10px 0;
     border-radius: 20px;
     background-color: var(--content-bg);
-
 }
-
 #content{
     height: 79%;/*630/844*/
     overflow-y: scroll;
