@@ -114,10 +114,10 @@ body{
     display: flex;
 }
 .preference p {
-    height: 38.5vh; /* 78% av høyden på skjermen */
+     /* 78% av høyden på skjermen */
     text-align: center;
     white-space: nowrap;
-    margin: 30.5vh 0;
+    margin: 30.5vh 0; /* This ugly btw, should have made another div*/
 }
 .pref_cont_child{
     min-width: 100%;
@@ -149,7 +149,7 @@ footer div{
     margin: auto;
     cursor: pointer;
 }
-footer p {
+footer p{
     border-radius: 20px;
     padding: 1vh 3vw;
     background-color: var(--content-bg);
