@@ -110,12 +110,29 @@ body{
     border: var(--main-color) 1px;
     border-style: solid hidden solid hidden;
 }
+.preference{
+    max-height: 100%;
+    min-height: 90px;
+    display: flex;
+    border: var(--main-color) 1px;
+    border-style: solid hidden solid hidden;
+}
+.preference p {
+    height: 78vh; /* 78% av høyden på skjermen */
+    text-align: center;
+    white-space: nowrap;
+    margin: 39vh 0;
+}
+.pref_cont_child{
+    min-width: 100%;
+    padding: 10px 0 0;
+    scroll-snap-align: start; /* får cont til å snappe */
+}
 .event_cont_parent{
     width: 100%;
     display: inline-flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory; /* får cont til å snappe */
-    padding: 0 10px;
 }
 .event_cont_child{
     min-width: 100%;
@@ -135,4 +152,10 @@ footer{
 footer div{
     margin: auto;
     cursor: pointer;
+}
+footer p {
+    border-radius: 20px;
+    padding: 1vh 3vw;
+    background-color: var(--content-bg);
+    white-space: nowrap;
 }
