@@ -138,10 +138,11 @@ body{
 
 .event_title{
     float: left;
+    white-space: nowrap;
 }
 .event_date{
     float: right;
-
+    white-space: nowrap;
 }
 footer{
     width: 100%;
