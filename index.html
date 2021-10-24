@@ -6,63 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="stylesheet.css"> <!-- Felles stilark -->
-    <title>Gruppe 4B</title>
-    <style>
-        body{
-
-        }
-        .parent {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 968px;
-        }
-        .mainIndexButton{
-            cursor: pointer;
-            width:450px;
-            height:450px;
-            background-color: blue;
-            color: var(--text-color);
-            animation: mnyColors 3s 1;
-            border: none;
-            border-radius: 500px;
-            overflow: hidden;
-
-        }
-        @-webkit-keyframes mnyColors {
-            0% {background-color: blue}
-            25% {background-color: darkred; color: var(--text-color);}
-            50% {background-color: #ffd700; color: var(--main-color); font-size: 30px; transform: rotateY(180deg) }
-            75% {background-color: purple; color: var(--text-color);}
-            100% {background-color: blue}
-        }
-        @media screen and (max-width: 414px) {
-            .mainIndexButton {
-                width: 220px; /* The width is 200px, when the viewport is 400px or smaller */
-                height: 220px;
-                animation: mnyColors2 3s 2;
-            }
-            .parent{
-                height: 736px;
-            }
-            @-webkit-keyframes mnyColors2 {
-                0% {background-color: blue}
-                25% {background-color: darkred; color: var(--text-color);}
-                50% {background-color: #ffd700; color: var(--main-color); font-size: 20px}
-                75% {background-color: purple; color: var(--text-color);}
-                100% {background-color: blue}
-            }}
-
-    </style>
+    <title>Events</title>
 </head>
 <body>
+<div class="uber_parent">
+    <div id="phone-size">
 
-<!-- slettes -->
+        <header id="phone-notch">
+            <img src="icon/Sarra_Logo_HvitBG.png" alt="sarra-logo">
+        </header>
 
-    <div class="parent">
-        <button onclick="location='sarraDesign.html'" class="mainIndexButton"> yeboi <br> dev stuff ongoing <br> new release comming sunday <br> 24/10</button>
+        <nav id="phone-nav">
+            <div id="page-name">
+                <h2 id="p-name-txt">Preferences</h2>
+            </div>
+        </nav>
+
+        <main id="content">
+            <div class="preference">
+                <div class="event_cont_parent">
+                    <div class="pref_cont_child">
+                        <p>Sjanger</p>
+                    </div>
+                    <div class="pref_cont_child">
+                        <p>Added to liked</p>
+                    </div>
+                    <div class="pref_cont_child">
+                        <p>Sjanger</p>
+                    </div>
+                    <div class="pref_cont_child">
+                        <p>Added to liked</p>
+                    </div>
+                    <div class="pref_cont_child">
+                        <p>Sjanger</p>
+                    </div>
+                    <div class="pref_cont_child">
+                        <p>Added to liked</p>
+                    </div>
+                    <div class="pref_cont_child">
+                        <p>Sjanger</p>
+                    </div>
+                    <div class="pref_cont_child">
+                        <p>Added to liked</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div onclick="location='sarraDesign.html'">
+                <p id="fuckNo">No!</p>
+            </div>
+            <div onclick="location='sarraDesign.html'">
+                <p id="thisIsBoring">Skip all</p>
+            </div>
+            <div onclick="location='sarraDesign.html'">
+                <p id="fuckYes" >Yes!</p>
+            </div>
+        </footer>
     </div>
-<!-- slettes -->
-
+</div>
 </body>
 </html>
