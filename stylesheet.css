@@ -119,6 +119,12 @@ body{
     padding: 10px 0 0 10px;
     scroll-snap-align: start; /* får cont til å snappe */
 }
+
+.date{
+    float: right;
+    background-color: gold;
+
+}
 footer{
     width: 100%;
     height: 10%; /*90/844*/
