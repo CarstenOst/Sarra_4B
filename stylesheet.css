@@ -133,10 +133,17 @@ body{
 }
 .event_cont_child{
     min-width: 100%;
-    padding: 0px 10px 0 10px;
+    padding: 0 10px 0 10px;
     scroll-snap-align: start; /* får cont til å snappe */
 }
+.event_title h3{
+    font-size: 15px;
 
+}
+.event_date h3{
+    font-size: 12px;
+
+}
 .event_title{
     float: left;
     white-space: nowrap;
