@@ -1,9 +1,9 @@
 :root {
-    --main-color: #191919;
+    --main-color: white;
     --preben-color: #48412d; /* Her Preben, fargen din  */
-    --text-color: azure;
-    --phone-bg: lightblue;
-    --content-bg: white;
+    --text-color: white;
+    --phone-bg: #082032;
+    --content-bg: #334756;
 }
 *{
     margin: 0;
@@ -11,12 +11,13 @@
 }
 body{
     background-color: var(--main-color);
+    font-family: "Roboto", sans-serif;
 }
 .uber_parent {
     display: flex;
     justify-content: center;
 }
-
+/* blabla ikke bland class og id... Pffft, jeg blander alt. Hmm går og blander meg litt saft. */
 #phone-size{
     width: 100%;
     max-width: 100%;
@@ -61,6 +62,8 @@ body{
     min-width: 35px;
     height: 30px;
     margin: auto;
+    background-color: var(--content-bg);
+    color: var(--main-color);
 }
 #page-name{
     display: block;
@@ -74,9 +77,7 @@ body{
     margin: 5px 0 10px 0;
     border-radius: 20px;
     background-color: var(--content-bg);
-
 }
-
 #content{
     height: 79%;/*630/844*/
     overflow-y: scroll;
@@ -104,15 +105,30 @@ body{
     max-height: 300px;
     min-height: 90px;
     display: flex;
-    border: black 1px;
+    border: var(--main-color) 1px;
     border-style: solid hidden solid hidden;
+}
+.preference{
+    max-height: 100%;
+    min-height: 90px;
+    display: flex;
+}
+.preference p {
+     /* 78% av høyden på skjermen */
+    text-align: center;
+    white-space: nowrap;
+    margin: 30.5vh 0; /* This ugly btw, should have made another div*/
+}
+.pref_cont_child{
+    min-width: 100%;
+    padding: 10px 0 0;
+    scroll-snap-align: start; /* får cont til å snappe */
 }
 .event_cont_parent{
     width: 100%;
     display: inline-flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory; /* får cont til å snappe */
-    padding: 0 10px;
 }
 .event_cont_child{
     min-width: 100%;
@@ -138,4 +154,10 @@ footer{
 footer div{
     margin: auto;
     cursor: pointer;
+}
+footer p{
+    border-radius: 20px;
+    padding: 1vh 3vw;
+    background-color: var(--content-bg);
+    white-space: nowrap;
 }
