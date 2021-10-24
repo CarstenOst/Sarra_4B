@@ -126,13 +126,14 @@ body{
 }
 .event_cont_parent{
     width: 100%;
+    padding: 10px;
     display: inline-flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory; /* får cont til å snappe */
 }
 .event_cont_child{
     min-width: 100%;
-    padding: 10px 10px 0 10px;
+    padding: 0px 10px 0 10px;
     scroll-snap-align: start; /* får cont til å snappe */
 }
 
