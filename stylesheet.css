@@ -136,9 +136,11 @@ body{
     scroll-snap-align: start; /* får cont til å snappe */
 }
 
-.date{
+.event_title{
+    float: left;
+}
+.event_date{
     float: right;
-    background-color: gold;
 
 }
 footer{
