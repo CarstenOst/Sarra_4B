@@ -132,7 +132,7 @@ body{
 }
 .event_cont_child{
     min-width: 100%;
-    padding: 10px 0 0 10px;
+    padding: 10px 10px 0 10px;
     scroll-snap-align: start; /* får cont til å snappe */
 }
 
