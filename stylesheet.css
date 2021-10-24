@@ -11,6 +11,7 @@
 }
 body{
     background-color: var(--main-color);
+    font-family: "Roboto", sans-serif;
 }
 .uber_parent {
     display: flex;
