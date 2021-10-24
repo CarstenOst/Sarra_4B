@@ -1,9 +1,9 @@
 :root {
-    --main-color: #191919;
+    --main-color: white;
     --preben-color: #48412d; /* Her Preben, fargen din  */
-    --text-color: azure;
-    --phone-bg: lightblue;
-    --content-bg: white;
+    --text-color: white;
+    --phone-bg: #082032;
+    --content-bg: #334756;
 }
 *{
     margin: 0;
@@ -61,6 +61,8 @@ body{
     min-width: 35px;
     height: 30px;
     margin: auto;
+    background-color: var(--content-bg);
+    color: var(--main-color);
 }
 #page-name{
     display: block;
@@ -104,7 +106,7 @@ body{
     max-height: 300px;
     min-height: 90px;
     display: flex;
-    border: black 1px;
+    border: var(--main-color) 1px;
     border-style: solid hidden solid hidden;
 }
 .event_cont_parent{
