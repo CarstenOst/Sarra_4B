@@ -126,14 +126,31 @@ body{
 }
 .event_cont_parent{
     width: 100%;
+    padding: 10px;
     display: inline-flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory; /* får cont til å snappe */
 }
 .event_cont_child{
     min-width: 100%;
-    padding: 10px 0 0 10px;
+    padding: 0 10px 0 10px;
     scroll-snap-align: start; /* får cont til å snappe */
+}
+.event_title h3{
+    font-size: 15px;
+
+}
+.event_date h3{
+    font-size: 12px;
+
+}
+.event_title{
+    float: left;
+    white-space: nowrap;
+}
+.event_date{
+    float: right;
+    white-space: nowrap;
 }
 footer{
     width: 100%;
