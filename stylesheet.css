@@ -112,14 +112,12 @@ body{
     max-height: 100%;
     min-height: 90px;
     display: flex;
-    border: var(--main-color) 1px;
-    border-style: solid hidden solid hidden;
 }
 .preference p {
-    height: 78vh; /* 78% av høyden på skjermen */
+    height: 38.5vh; /* 78% av høyden på skjermen */
     text-align: center;
     white-space: nowrap;
-    margin: 39vh 0;
+    margin: 30.5vh 0;
 }
 .pref_cont_child{
     min-width: 100%;
