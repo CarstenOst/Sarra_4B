@@ -134,12 +134,15 @@ body{
     min-width: 100%;
     padding: 0 10px 0 10px;
     scroll-snap-align: start; /* får cont til å snappe */
+    position: relative;
+    overflow: hidden;
 }
 .deltakere{
-    background-color: #48412d;
     position: absolute;
+    bottom: 0;
     right: 0;
-    bottom: 20px;
+    margin: 0 10px 10px 0;
+    text-align: center;
 }
 .event_title h3{
     font-size: 15px;
