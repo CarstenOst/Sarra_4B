@@ -172,3 +172,26 @@ footer p{
     background-color: var(--content-bg);
     white-space: nowrap;
 }
+
+/* Loading page*/
+
+/* Sentrert all tekst*/
+.loading_page {
+    text-align: center;
+}
+/* Sirkel som loader på nettsida*/
+.loader_circle{
+    margin: auto; /* Midtstille innhold med marg fra kanten som er satt til automatisk lik fra begge sider */
+    border: 8px solid white; /* Farge og tykkelse på loading sirkel*/
+    border-radius: 50%; /* Lage sirkelen rundt i stedet for firkantet*/
+    border-bottom: 8px solid #082031; /* Farge på del av sirkelen er satt til bli (#082130)*/
+    width: 50px; /* Styre størrelse på sirkel i bredden*/
+    height: 50px; /*styre størrelse på sirkel i høyde*/
+    -webkit-animation: spin 1.7s linear infinite; /* Styre en endring i status på et objekt og hvilke hastighet det skal endres i og når den skal starte*/
+}
+
+/* Definerer navn på objekt og hvilke endring som skal skje i objektet fra startpunkt til sluttpunkt, her med rotering fra 0 % til 100 %*/
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    50% {-webkit-transform: rotate(360deg);}
+}
