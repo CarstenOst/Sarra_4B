@@ -202,7 +202,7 @@ footer p{
 .loading_page {
     text-align: center;
 }
-/* Sirkel som loader på nettsida*/
+/* Sirkel som loader på nettsida, brukt denne kilden som mal: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader*/
 .loader_circle{
     margin: auto; /* Midtstille innhold med marg fra kanten som er satt til automatisk lik fra begge sider */
     border: 8px solid white; /* Farge og tykkelse på loading sirkel*/
