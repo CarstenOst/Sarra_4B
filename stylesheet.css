@@ -116,12 +116,11 @@ body{
 .preference p {
      /* 78% av høyden på skjermen */
     text-align: center;
-    white-space: nowrap;
     margin: 30.5vh 0; /* This ugly btw, should have made another div*/
 }
 .pref_cont_child{
     min-width: 100%;
-    padding: 10px 0 0;
+    padding: 0 10px 0 10px;
     scroll-snap-align: start; /* får cont til å snappe */
 }
 .event_cont_parent{
@@ -135,10 +134,18 @@ body{
     min-width: 100%;
     padding: 0 10px 0 10px;
     scroll-snap-align: start; /* får cont til å snappe */
+    position: relative;
+    overflow: hidden;
+}
+.deltakere{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 10px 10px 0;
+    text-align: center;
 }
 .event_title h3{
     font-size: 15px;
-
 }
 .event_date h3{
     font-size: 12px;
