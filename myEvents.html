@@ -18,7 +18,7 @@
 
         <nav id="phone-nav"><!-- onclick js toggler bare search bar :/ jeg er altfor lat altså-->
             <div id="phone-nav-search-btn" onclick="kake=document.getElementById('phone-search-bar'); if (kake.style.display === 'block'){kake.style.display = 'none'}else{kake.style.display = 'block';}">
-                <img src="icon/search_icon.png" alt="search_icon">
+                <div class="icon"><img src="icon/search_icon.png" alt="search_icon"><span>Search</span></div>
             </div>
             <div id="phone-search-bar" style="display: none; max-width: 50px">
                 <form><label for="search" style="display: none">none</label> <!-- la til label for at intellij skulle slutte å grine, bruker heller placeholder :)-->
@@ -29,7 +29,7 @@
                 <h2 id="p-name-txt">My Events</h2>
             </div>
             <div id="phone-settings" onclick="location='settings.html'">
-                <img src="icon/settings_icon.png" alt="settings_icon">
+                <div class="icon"><img src="icon/settings_icon.png" alt="settings_icon"><span>Settings</span></div>
             </div>
         </nav>
 
@@ -213,16 +213,19 @@
 
         <footer>
             <div onclick="location='myEvents.html'">
-                <!--suppress CheckImageSize -->
-                <img src="icon/calendar_icon.png" alt="calendar" height="45">
+                <div class="icon">
+                    <!--suppress CheckImageSize -->
+                    <img src="icon/calendar_icon.png" alt="calendar" height="35"><span>My Events</span></div>
             </div>
             <div onclick="location='events.html'">
-                <!--suppress CheckImageSize -->
-                <img src="icon/home_icon.png" alt="home" height="35">
+                <div class="icon">
+                    <!--suppress CheckImageSize -->
+                    <img src="icon/home_icon.png" alt="home" height="35"><span>Home</span></div>
             </div>
             <div onclick="location='myFriends.html'">
-                <!--suppress CheckImageSize -->
-                <img src="icon/friends_icon.png" alt="friends" height="35">
+                <div class="icon">
+                    <!--suppress CheckImageSize -->
+                    <img src="icon/friends_icon.png" alt="friends" height="35"><span>Friends</span></div>
             </div>
         </footer>
     </div>
