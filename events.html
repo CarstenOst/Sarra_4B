@@ -18,7 +18,7 @@
 
         <nav id="phone-nav">
             <div id="phone-nav-search-btn" onclick="window.location.reload()">
-                <img src="icon/search_icon.png" alt="search_icon">
+                <div class="icon"><img src="icon/search_icon.png" alt="search_icon"><span>Search</span></div>
             </div>
             <div id="phone-search-bar">
                 <form><label for="search" style="display: none">none</label> <!-- la til label for at intellij skulle slutte å grine, bruker heller placeholder :)-->
@@ -26,7 +26,7 @@
                 </form>
             </div>
             <div id="phone-settings" onclick="location='settings.html'">
-                <img src="icon/settings_icon.png" alt="settings_icon">
+                <div class="icon"><img src="icon/settings_icon.png" alt="settings_icon"><span>Settings</span></div>
             </div>
         </nav>
 
@@ -218,20 +218,40 @@
                         document.write(lines);}}
                 drawEventCont()
             </script>
+            <div class="preference loading_page">
+                <div class="event_cont_parent">
+                    <div class="event_cont_child">
+                        <br>
+                        <br>
+                        <div class="loader_circle"></div> <!-- henter inn -style fra css som viser loading sirkel -->
+                        <br>
+                        <h1>Loading</h1><h3>as fast as we can</h3>
+                        <h1>&#128517</h1>
+                        <br>
+                        <br>
+                        <h3>Just making extra sure your <br><u>privacy</u><br> is still safe</h3>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
             <div onclick="location='myEvents.html'">
-                <!--suppress CheckImageSize -->
-                <img src="icon/calendar_icon.png" alt="calendar" height="35px">
+                <div class="icon">
+                    <!--suppress CheckImageSize -->
+                    <img src="icon/calendar_icon.png" alt="calendar" height="35"><span>My Events</span></div>
             </div>
-            <div onclick="location='index.html'">
-                <!--suppress CheckImageSize -->
-                <img src="icon/home_icon.png" alt="home" height="45">
+            <div onclick="location='events.html'">
+                <div class="icon">
+                    <!--suppress CheckImageSize -->
+                    <img src="icon/home_icon.png" alt="home" height="35"><span>Home</span></div>
             </div>
             <div onclick="location='myFriends.html'">
-                <!--suppress CheckImageSize -->
-                <img src="icon/friends_icon.png" alt="friends" height="35">
+                <div class="icon">
+                    <!--suppress CheckImageSize -->
+                    <img src="icon/friends_icon.png" alt="friends" height="35"><span>Friends</span></div>
             </div>
         </footer>
     </div>
