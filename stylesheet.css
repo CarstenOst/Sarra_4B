@@ -180,6 +180,22 @@ footer p{
     white-space: nowrap;
 }
 
+.icon span{
+    display: flex;
+}
+
+/* Friends*/
+.friends_picture{
+    width: auto;
+    max-height: 150px;
+}
+
+.friends_bio{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 /* Loading page*/
 
 /* Sentrert all tekst*/
