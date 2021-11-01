@@ -11,4 +11,3 @@ Here, a little nudge https://carstenost.github.io/4B/
 /\__|  |____//____  > |__|   \____ |\____/  |__||__|  
 \______|          \/              \/                  
 ```
-background: linear-gradient(to right,#a8dadc,#05668d,#a8dadc, #00a896,#02c39a)
