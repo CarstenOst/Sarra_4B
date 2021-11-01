@@ -34,31 +34,18 @@
         </nav>
 
         <main id="content">
-            <script> /* Skriver innholdet */
-            function drawEventCont(){
-                for(let i = 0; i <= 0; i++){
-                    let lines = '\
-            <div class="event">\
-                <div class="event_cont_parent" onclick="location=\'index.html\'">\
-                    <div class="event_cont_child">\
-                        <p>Wubba lubba dub dub! No settings for you!</p>\
-                    </div>\
-                    <div class="event_cont_child">\
-                    <!-- https://1lineart.kulaone.com/#/ -->\
-                        ┌∩┐(◣_◢)┌∩┐\
-                    </div>\
-                    <div class="event_cont_child">\
-                    <!-- https://1lineart.kulaone.com/#/ -->\
-                        \'\'\'⌐(ಠ۾ಠ)¬\'\'\'\'\'\'⌐(ಠ۾ಠ)¬\'\'\'\'\'\'⌐(ಠ۾ಠ)¬\'\'\'\'\'\'⌐(ಠ۾ಠ)¬\'\'\'\
-                    </div>\
-                    <div class="event_cont_child">\
-                        What?! Why tf do you keep scrolling here?! I got no cake for you! ┌∩┐(◣_◢)┌∩┐\
-                    </div>\
-                </div>\
-            </div>';
-                    document.write(lines);}}
-            drawEventCont()
-            </script>
+        <div class ="container">
+            <div class="profile tabShow">
+                <img class="lås" src="icon/lock.png" height="35px" alt="lock-icon">
+                <h class="privat">Privatmodus</h>
+
+                <label class="toggle"> <!--https://www.youtube.com/watch?v=WBSOebkzHo0-->
+                    <span class="onoff">ON</span>
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
         </main>
 
         <footer>
@@ -78,4 +65,10 @@
     </div>
 </div>
 </body>
+<script>const toggle = document.querySelector('.toggle input')
+
+toggle.addEventListener('click', () => {
+    const onOff = toggle.parentNode.querySelector('.onoff')
+    onOff.textContent = toggle.checked ? 'OFF' : 'ON'
+})</script>
 </html>
