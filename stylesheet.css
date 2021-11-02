@@ -14,18 +14,26 @@
     margin: 0 auto;
 }
 body{
-    background-color: var(--main-color);
+    background-color: #212121;
     font-family: "Roboto", sans-serif;
+}
+/* max størrelse på 420px */
+@media only screen and (min-width: 420px) {
+    .icon{
+        max-width: 100px;
+    }
+    footer{
+        max-width: 420px;
+    }
 }
 .uber_parent {
     display: flex;
     justify-content: center;
 }
-
 /* blabla ikke bland class og id... Pffft, jeg blander alt. Hmm går og blander meg litt saft. */
 #phone-size{
     width: 100%;
-    max-width: 100%;
+    max-width: 420px;
     height: 100vh; /* 844px for iphone 13*/
     min-height: 200px;
     overflow: hidden;
