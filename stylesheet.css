@@ -279,9 +279,9 @@ footer p{
 }
 
 .profile{
-    font-size: 1.3em;
+    font-size: 15px;
     border-bottom: 2px solid #082032;
-    margin: 20px;
+    margin: 20px 20px 30px 20px;
     padding-bottom: 35px;
     padding-left: 10px;
 }
