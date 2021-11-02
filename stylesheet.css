@@ -246,11 +246,11 @@ footer p{
 /* Sirkel som loader på nettsida, brukt denne kilden som mal: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader*/
 .loader_circle{
     margin: auto; /* Midtstille innhold med marg fra kanten som er satt til automatisk lik fra begge sider */
-    border: 8px solid white; /* Farge og tykkelse på loading sirkel*/
+    border: 6px solid white; /* Farge og tykkelse på loading sirkel*/
     border-radius: 50%; /* Lage sirkelen rundt i stedet for firkantet*/
     border-bottom: 8px solid #082031; /* Farge på del av sirkelen er satt til bli (#082130)*/
-    width: 50px; /* Styre størrelse på sirkel i bredden*/
-    height: 50px; /*styre størrelse på sirkel i høyde*/
+    width: 30px; /* Styre størrelse på sirkel i bredden*/
+    height: 30px; /*styre størrelse på sirkel i høyde*/
     -webkit-animation: spin 1.7s linear infinite; /* Styre en endring i status på et objekt og hvilke hastighet det skal endres i og når den skal starte*/
 }
 
