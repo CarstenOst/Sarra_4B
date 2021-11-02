@@ -340,4 +340,7 @@ input:checked + .slider:before {
 .slider.round::before {
     border-radius: 20px;
 }
-
+.empty_page{
+    padding: 2% 30%;
+    text-align: center;
+}
