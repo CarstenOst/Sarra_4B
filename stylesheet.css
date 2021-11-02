@@ -9,6 +9,10 @@
     margin: 0;
     padding: 0;
 }
+.event img{
+    display: block;
+    margin: 0 auto;
+}
 body{
     background-color: var(--main-color);
     font-family: "Roboto", sans-serif;
@@ -17,6 +21,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 /* blabla ikke bland class og id... Pffft, jeg blander alt. Hmm går og blander meg litt saft. */
 #phone-size{
     width: 100%;
@@ -172,6 +177,8 @@ footer{
 footer div{
     margin: auto;
     cursor: pointer;
+    width: 33vw;
+    justify-content: center;
 }
 footer p{
     border-radius: 20px;
@@ -179,9 +186,14 @@ footer p{
     background-color: var(--content-bg);
     white-space: nowrap;
 }
-
+.icon{
+    width: 33vw;
+    text-align: center; /* Ironically this centers the icon, and not the text*/
+}
 .icon span{
     display: flex;
+    justify-content: center;
+    white-space: nowrap;
 }
 
 /* Friends*/
