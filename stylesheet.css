@@ -9,8 +9,7 @@
     margin: 0;
     padding: 0;
 }
-img{
-    max-width: 420px;
+.event img{
     display: block;
     margin: 0 auto;
 }
@@ -22,6 +21,7 @@ body{
     display: flex;
     justify-content: center;
 }
+
 /* blabla ikke bland class og id... Pffft, jeg blander alt. Hmm går og blander meg litt saft. */
 #phone-size{
     width: 100%;
