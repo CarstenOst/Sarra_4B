@@ -164,6 +164,12 @@ body{
     float: right;
     white-space: nowrap;
 }
+.googleMaps {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 footer{
     width: 100%;
     height: 10%; /*90/844*/
@@ -315,8 +321,3 @@ input:checked + .slider:before {
     border-radius: 20px;
 }
 
-.googleMaps {
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
