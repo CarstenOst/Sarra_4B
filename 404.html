@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png"> <!-- Linker til felles mappe med symboler -->
+    <meta charset="UTF-8"> <!-- Sørger for å få med æ, ø og å -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Tilpasser innholdet til ulike plattformer og enheter -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Sørger for tilpasning til browser som brukes og spesifikt Egde her -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"> <!-- Felles stilark -->
+    <title>Loading page</title>
+</head>
+<!-- lagt inn samme bakgrunnsfarger og header/footer som resten av nettsidene i body -->
+<body class="loading_page">
+<div class="uber_parent">
+    <div id="phone-size">
+
+        <header id="phone-notch">
+            <img src="icon/Sarra_Logo_HvitBG.png" alt="sarra-logo" onclick="location='events.html'">
+        </header>
+        <nav id="phone-nav"></nav>
+
+        <main id="content">
+            <div class="preference">
+                <div class="event_cont_parent">
+                    <div class="notFoundChild"><br><br>
+                        Error 404 page not found<br><br><br>
+                        Please contact support:
+                        <br>
+                        +47 420 13 370
+                        <br><br><br>
+                        Or report it here
+                        <br><br><br>
+                        <button class="reportBtn" onclick="alert('Thank you for your report. Safe to leave this page now')"> Report</button>
+                        <br><br>
+                        <button class="reportBtn" onclick="location='events.html'"> Go back </button>
+                        <br><br><br><br><br><br>
+                    </div>
+                    <div class="notFoundChild"><br><br>
+                        Error 404 page not found<br><br><br>
+                        Please contact support:
+                        <br>
+                        +47 420 13 370
+                        <br><br><br>
+                        Or report it here
+                        <br><br><br>
+                        <button class="reportBtn" onclick="alert('Thank you for your report. Safe to leave this page now')"> Report</button>
+                        <br><br>
+                        <button class="reportBtn" onclick="location='events.html'"> Go back </button>
+                        <br><br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div onclick="location='myEvents.html'">
+                <p id="myEvents">My Events</p>
+            </div>
+            <div onclick="location='events.html'">
+                <p id="events">Events</p>
+            </div>
+            <div onclick="location='myFriends.html'">
+                <p id="friends">Friends</p>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
