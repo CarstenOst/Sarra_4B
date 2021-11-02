@@ -78,8 +78,8 @@ body{
 }
 #p-name-txt{
     min-width: 62px;
-    padding: 10px;
-    margin: 5px 0 10px 0;
+    padding: 3px;
+    margin: 18px 0 10px 0;
     border-radius: 20px;
     background-color: var(--content-bg);
 }
@@ -341,6 +341,6 @@ input:checked + .slider:before {
     border-radius: 20px;
 }
 .empty_page{
-    padding: 2% 30%;
+    padding: 10px 30px;
     text-align: center;
 }
