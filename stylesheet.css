@@ -184,6 +184,7 @@ footer div{
     margin: auto;
     cursor: pointer;
     width: 33vw;
+    max-width: 100px;
     justify-content: center;
 }
 footer p{
