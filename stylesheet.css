@@ -191,6 +191,7 @@ footer p{
     padding: 1vh 3vw;
     background-color: var(--content-bg);
     white-space: nowrap;
+    text-align: center;
 }
 .icon{
     width: 33vw;
