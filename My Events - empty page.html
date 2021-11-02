@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="stylesheet.css"> <!-- Felles stilark -->
-    <title>Settings</title>
+    <title>My Events</title>
 </head>
 <body>
 <div class="uber_parent">
@@ -26,7 +26,7 @@
                 </form>
             </div>
             <div id="page-name">
-                <h2 id="p-name-txt">Settings</h2>
+                <h2 id="p-name-txt">My Events</h2>
             </div>
             <div id="phone-settings" onclick="location='settings.html'">
                 <div class="icon"><img src="icon/settings_icon.png" alt="settings_icon"><span>Settings</span></div>
@@ -34,47 +34,43 @@
         </nav>
 
         <main id="content">
-        <div class ="container">
-            <div class="profile tabShow">
-                <img class="lås" src="icon/lock.png" height="35px" alt="lock-icon">
-                <h class="privat">Privatmodus</h>
-
-                <label class="toggle"> <!--https://www.youtube.com/watch?v=WBSOebkzHo0-->
-                    <span class="onoff">ON</span>
-                    <input type="checkbox" />
-                    <span class="slider round"></span>
-                </label>
-            </div>
-        </div>
+           <div class="empty_page">
+            <br>
+            <br>
+            <h2>Ingen favoritt Events <br> her inne enda?</h2>
+            <br>
+            <br>
+            <p>1. Trykk på "Home" og velg et<br> event ved å klikke på hjerte</p>
+            <br>
+            <p>2. Valgt event dukker opp her på<br> "My Events" som del av dine<br> favoritteventer</p>
+            <br>
+            <p>3. Da får du god oversikt og du<br> kan velge å få påminnelser om<br> hendelser i eventen</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+           </div>
         </main>
 
         <footer>
             <div onclick="location='myEvents.html'">
                 <div class="icon">
                     <!--suppress CheckImageSize -->
-                    <img src="icon/calendar_icon.png" alt="calendar" height="35"><span>My Events</span>
-                </div>
+                    <img src="icon/calendar_icon.png" alt="calendar" height="35"><span>My Events</span></div>
             </div>
             <div onclick="location='events.html'">
                 <div class="icon">
                     <!--suppress CheckImageSize -->
-                    <img src="icon/home_icon.png" alt="home" height="35"><span>Home</span>
-                </div>
+                    <img src="icon/home_icon.png" alt="home" height="35"><span>Home</span></div>
             </div>
             <div onclick="location='myFriends.html'">
                 <div class="icon">
                     <!--suppress CheckImageSize -->
-                    <img src="icon/friends_icon.png" alt="friends" height="35"><span>Friends</span>
-                </div>
+                    <img src="icon/friends_icon.png" alt="friends" height="35"><span>Friends</span></div>
             </div>
         </footer>
     </div>
 </div>
 </body>
-<script>const toggle = document.querySelector('.toggle input')
-
-toggle.addEventListener('click', () => {
-    const onOff = toggle.parentNode.querySelector('.onoff')
-    onOff.textContent = toggle.checked ? 'OFF' : 'ON'
-})</script>
 </html>
