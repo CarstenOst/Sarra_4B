@@ -37,12 +37,12 @@
             <script> /* Skriver innholdet */
             function drawEventCont(){
                 // her kan du legge til flere venner, husk komma,,,,,
-                let friendPicture = ["picture/Student_jente.jpg", "picture/Student_jente.jpg", "picture/Student_jente.jpg",]
-                let friendName = ["Simone", "navn", "navn2"];
-                let friendAge = ["22","23","20"];
-                let friendBorn = ["Karmøy","Molde","Sveggen"]
-                let friendStudie = ["Lærer","Rakettforsker","Bonde"]
-                let friendIntrests = ["Musikk, Quiz","Raketter, mat","Contry, Burger"]
+                let friendPicture = ["picture/Simone.jpg", "picture/Peter.jpg", "picture/Olav.jpg","picture/Claire.jpg"];
+                let friendName = ["Simone","Peter","Olav","Claire"];
+                let friendAge = ["22","21","20","24"];
+                let friendBorn = ["Karmøy","Molde","Sveggen","Glasgow"];
+                let friendStudie = ["Lærer","Rakettforsker","Musikk","Folkehelse"];
+                let friendIntrests = ["Musikk, Quiz","Raketter, mat","Contry, Burger","Sports"];
 
                 let x = friendName.length - 1; // length starts at 1, instead of 0. Possible bug in coding language
                 for(let i = 0; i <= x; i++){
@@ -73,6 +73,11 @@
                     document.write(lines);}}
             drawEventCont()
             </script>
+            <div class="event">
+                <div class="event_cont_parent">
+                    <div class="event_cont_child"></div>
+                </div>
+            </div>
         </main>
 
         <footer>
