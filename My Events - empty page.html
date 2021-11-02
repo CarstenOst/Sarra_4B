@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"> <!-- Felles stilark -->
+    <title>My Events</title>
+</head>
+<body>
+<div class="uber_parent">
+    <div id="phone-size">
+
+        <header id="phone-notch">
+            <img src="icon/Sarra_Logo_HvitBG.png" alt="sarra-logo">
+        </header>
+
+        <nav id="phone-nav"><!-- onclick js toggler bare search bar :/ jeg er altfor lat altså-->
+            <div id="phone-nav-search-btn" onclick="kake=document.getElementById('phone-search-bar'); if (kake.style.display === 'block'){kake.style.display = 'none'}else{kake.style.display = 'block';}">
+                <div class="icon"><img src="icon/search_icon.png" alt="search_icon"><span>Search</span></div>
+            </div>
+            <div id="phone-search-bar" style="display: none; max-width: 50px">
+                <form><label for="search" style="display: none">none</label> <!-- la til label for at intellij skulle slutte å grine, bruker heller placeholder :)-->
+                    <input id="search" name="search" placeholder="search" type="text">
+                </form>
+            </div>
+            <div id="page-name">
+                <h2 id="p-name-txt">My Events</h2>
+            </div>
+            <div id="phone-settings" onclick="location='settings.html'">
+                <div class="icon"><img src="icon/settings_icon.png" alt="settings_icon"><span>Settings</span></div>
+            </div>
+        </nav>
+
+        <main id="content">
+           <div class="empty_page">
+            <br>
+            <br>
+            <h2>Ingen favoritt Events <br> her inne enda?</h2>
+            <br>
+            <br>
+            <br>
+            <p>1. Trykk på "Home" og velg et event ved å klikke på hjerte</p>
+            <br>
+            <p>2. Valgt event dukker opp her på "My Events" som del av dine favoritteventer</p>
+            <br>
+            <p>3. Da får du god oversikt og du kan velge å få påminnelser om hendelser i eventen</p>
+           </div>
+        </main>
+
+        <footer>
+            <div onclick="location='myEvents.html'">
+                <div class="icon">
+                    <!--suppress CheckImageSize -->
+                    <img src="icon/calendar_icon.png" alt="calendar" height="35"><span>My Events</span></div>
+            </div>
+            <div onclick="location='events.html'">
+                <div class="icon">
+                    <!--suppress CheckImageSize -->
+                    <img src="icon/home_icon.png" alt="home" height="35"><span>Home</span></div>
+            </div>
+            <div onclick="location='myFriends.html'">
+                <div class="icon">
+                    <!--suppress CheckImageSize -->
+                    <img src="icon/friends_icon.png" alt="friends" height="35"><span>Friends</span></div>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
