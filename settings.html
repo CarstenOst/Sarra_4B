@@ -37,12 +37,25 @@
         <div class ="container">
             <div class="profile tabShow">
                 <img class="lås" src="icon/lock.png" height="35px" alt="lock-icon">
-                <h class="privat">Privatmodus</h>
+                <h class="privat">Privacy mode</h>
 
                 <label class="toggle"> <!--https://www.youtube.com/watch?v=WBSOebkzHo0-->
                     <span class="onoff">ON</span>
                     <input type="checkbox" />
                     <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="profile tabShow">
+                <img class="Norge" src="icon/Norge.png" height="35px" alt="lock-icon">
+                <img class="England" src="icon/Unitedkingdom.png" height="35px" alt="lock-icon">
+                <h class="Norsk">Norsk</h>
+                <h class="English">English</h>
+
+                <label class="Sprok"> <!--https://www.youtube.com/watch?v=WBSOebkzHo0-->
+                    <span class="Sproket">English</span>
+                    <input type="checkbox" />
+                    <span class="sliderSprok round"></span>
                 </label>
             </div>
         </div>
@@ -71,10 +84,26 @@
     </div>
 </div>
 </body>
-<script>const toggle = document.querySelector('.toggle input')
+
+
+<script>
+    const toggle = document.querySelector('.toggle input')
 
 toggle.addEventListener('click', () => {
     const onOff = toggle.parentNode.querySelector('.onoff')
     onOff.textContent = toggle.checked ? 'OFF' : 'ON'
-})</script>
+})
+
+</script>
+
+<script>
+    const Sprok = document.querySelector('.Sprok input')
+
+    Sprok.addEventListener('click', () => {
+        const Sproket = Sprok.parentNode.querySelector('.Sproket')
+        Sproket.textContent = Sprok.checked ? 'Norsk' : 'English'
+    })
+
+</script>
+
 </html>
