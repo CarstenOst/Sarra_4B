@@ -232,6 +232,7 @@ footer p{
     position: absolute;
     margin-left: 10px;
     margin-top: 10px;
+    height: 150px;
 }
 
 /* Loading page*/

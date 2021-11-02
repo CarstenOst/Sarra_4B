@@ -36,35 +36,37 @@
         <main id="content">
             <script> /* Skriver innholdet */
             function drawEventCont(){
-                for(let i = 0; i <= 0; i++){
+                // her kan du legge til flere venner, husk komma,,,,,
+                let friendPicture = ["picture/Student_jente.jpg", "picture/Student_jente.jpg", "picture/Student_jente.jpg",]
+                let friendName = ["Simone", "navn", "navn2"];
+                let friendAge = ["22","23","20"];
+                let friendBorn = ["Karmøy","Molde","Sveggen"]
+                let friendStudie = ["Lærer","Rakettforsker","Bonde"]
+                let friendIntrests = ["Musikk, Quiz","Raketter, mat","Contry, Burger"]
+
+                let x = friendName.length - 1; // length starts at 1, instead of 0. Possible bug in coding language
+                for(let i = 0; i <= x; i++){
                     let lines = '\
             <div class="event">\
                 <div class="event_cont_parent" onclick="location=\'loginReg.html\'">\
                     <div class="event_cont_child">\
                         \
                         <span>\
-                            <img src="picture/Student_jente.jpg" class="friends_picture" alt="friendsPicture" style="display: inline; margin: 0">\
+                            <img src="'+ friendPicture[i] +'" class="friends_picture" alt="friendsPicture" style="display: inline; margin: 0; max-width: 130px">\
                         </span>\
                         <span class="friends_bio">\
-                            <h3>Simone</h3>\
+                            <h3>'+ friendName[i] +'</h3>\
                             <br>\
                             <table>\
-                                <tr><td><b>Alder:</b></td><td>22 år</td></tr>\
-                                <tr><td><b>Fra:</b></td><td>Karmøy</td></tr>\
-                                <tr><td><b>Studie:</b></td><td>Lærer</td></tr>\
-                                <tr><td><b>Interesser: &nbsp</b></td><td>Musikk, Quiz</td></tr>\
+                                <tr><td><b>Alder:</b></td><td>'+ friendAge[i] +' år</td></tr>\
+                                <tr><td><b>Fra:</b></td><td>'+ friendBorn[i] +'</td></tr>\
+                                <tr><td><b>Studie:</b></td><td>'+ friendStudie[i] +'</td></tr>\
+                                <tr><td><b>Interesser: &nbsp</b></td><td>'+ friendIntrests[i] +'</td></tr>\
                             </table>\
                         </span>\
                     </div>\
                     <div class="event_cont_child">\
-                    Stop scrolling, jeeze\
-                    </div>\
-                    <div class="event_cont_child">\
-                    <!-- https://1lineart.kulaone.com/#/ -->\
-                        \'\'\'⌐(ಠ۾ಠ)¬\'\'\'\'\'\'⌐(ಠ۾ಠ)¬\'\'\'\'\'\'⌐(ಠ۾ಠ)¬\'\'\'\'\'\'⌐(ಠ۾ಠ)¬\'\'\'\
-                    </div>\
-                    <div class="event_cont_child">\
-                        Or maybe you don\'t have any friends \
+                    Add some chat thingy here\
                     </div>\
                 </div>\
             </div>';
