@@ -282,47 +282,13 @@ footer p{
     padding-left: 5px;
 }
 
-.Norsk {
-    position: relative; top: -10px;
-    padding-left: 5px;
-    padding-top: -15px;
-}
-
-.Norge{
-    margin-top: 15px;
-}
-
-.English{
-    float: right;
-    margin-right: 10px;
-    margin-top: 20px;
-}
-
-.England{
-    margin-top: 15px;
-    float: right;
-}
-
 .lås{
     position: relative; top: 8px;
 }
 
 .toggle {
-    float: right;
+    float:right;
     margin-right: 10px;
-}
-.Sprok {
-    position: absolute;
-    top:125px;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-.Sprok input {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
 }
 
 .toggle input {
@@ -333,13 +299,6 @@ footer p{
 }
 
 .toggle .onoff {
-    color: #fff;
-    font-size: 1em;
-    text-align: center;
-    display: block;
-}
-
-.Sprok .Sproket {
     color: #fff;
     font-size: 1em;
     text-align: center;
@@ -357,30 +316,7 @@ footer p{
     box-shadow: 0 0 5px limegreen;
 }
 
-.sliderSprok {
-    position: relative;
-    display: block;
-    cursor: pointer;
-    transition: 0.4s;
-    width: 60px;
-    height: 30px;
-    background-color: Blue;
-    box-shadow: 0 0 5px Blue;
-}
-
-
 .slider:before {
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 30px;
-    background-color: #fff;
-    transition: 0.4s;
-    top: 5px;
-    left: 25px;
-}
-
-.sliderSprok:before {
     content: "";
     position: absolute;
     height: 20px;
@@ -397,37 +333,16 @@ input:checked + .slider {
 
 }
 
-input:checked + .sliderSprok {
-    box-shadow: none;
-    background-color: red;
-
-}
-
 input:checked + .slider:before {
-    transform: translateX(-20px);
-}
-
-input:checked + .sliderSprok:before {
     transform: translateX(-20px);
 }
 
 .slider.round {
     border-radius: 20px;
 }
-
-.sliderSprok.round {
-    border-radius: 20px;
-}
-
 .slider.round::before {
     border-radius: 20px;
 }
-
-.sliderSprok.round::before {
-    border-radius: 20px;
-}
-
-
 .empty_page{
     padding: 10px 30px;
     text-align: center;
