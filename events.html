@@ -65,28 +65,30 @@
             <script> /* Skriver innholdet */
                 function drawEventCont(){
                     // Possible to add more events here (in the arrays)
-                    let eImg = ["icon/Quiztime.png", "icon/Madrugada%20bilde.png", "icon/Klatring.png", "icon/Hans%20Olav%20Lahlum.png", "picture/Ravnedalen.jpg"];
-                    let eSjanger = ["Sosialt", "Konsert", "Aktivitet", "Foredrag", "Aktivitet" ];
-                    let eNavn = ["Quiz", "Madrugada", "Klatring", "Hans Olav Lahlum", "DNT Sør"];
-                    let eSted = ["Østsida - Kristiansand", "Teateret - Kristiansand", "Odderøya - Kristiansand", "UiA, B1 018 - Kristiansand", "Ravnedalen naturpark"];
-                    let eDag = ["Torsdag", "Fredag", "Søndag", "Tirsdag", "Onsdag"];
-                    let eDato = ["7. oktober", "8. oktober", "10. okrober", "12. oktober", "4. November"]
+                    let eImg = ["icon/Quiztime.png", "icon/Madrugada%20bilde.png", "icon/Klatring.png", "icon/Hans%20Olav%20Lahlum.png", "picture/Ravnedalen.jpg", "picture/DigitaltKurs.jpg"];
+                    let eSjanger = ["Sosialt", "Konsert", "Aktivitet", "Foredrag", "Aktivitet", "Kurs" ];
+                    let eNavn = ["Quiz", "Madrugada", "Klatring", "Hans Olav Lahlum", "DNT Sør", "Kurs om studieteknikk"];
+                    let eSted = ["Østsida - Kristiansand", "Teateret - Kristiansand", "Odderøya - Kristiansand", "UiA, B1 018 - Kristiansand", "Ravnedalen naturpark", "UiA, B1 007 - Kristiansand" ];
+                    let eDag = ["Torsdag", "Fredag", "Søndag", "Tirsdag", "Torsdag", "Fredag"];
+                    let eDato = ["7. oktober", "8. oktober", "10. okrober", "12. oktober", "4. November", "5. November"]
                     let eInfo = [
                         "Velkommen til Quiz på Østsida kl. 20:00! <br>Petter styrer showet som normalt og det er plass til 20 lag, \"første-mann-til-mølla\"-prinsippet gjelder.",
                         "ENDELIG! Vi får et av Norges beste rockeband <br>på besøk til Kristiasand og vi har derfor lagt arrangementet til Teateret.Dørene åpner kl. 21:00.",
                         "Linjeforeningen Fjær og Fjell arrangerer klatring <br>på Ødderøya kl. 12:00.Har du ikke klatret så mye før? Ingen problem, vi hjelper deg og stiller med nødvendig utstyr til låns. Vi sikrer også i fjellveggen ved behov. Det er også gode buldremuligheter",
                         "Multikunstneren Hans Olav Lahlum kommer til UiA <br>og holder et forykkende foredrag om verdenssamfunnet med bærekraft i fokus. Med sine assossiasjoner til sjakk og politikk gleder vi oss til Hans Olav skal dele sed oss og regner med vi tar med oss noen flere tanker ut etter foredraget. Velkommen til et interessant og lærerikt foredrag.",
-                        "Velkommen til en spennende tur sammen med DNT Sør! Det arrangeres en tur rundt Bånetjønn som passer for både store og små. Turen er gradert enkel og er på 2,6 km. Vi skal møte opp kl. 11:00 ved Ravnedalen scene. Turen varer ca 2 timer med stopp for å spise:)",
-                        "",
+                        "Velkommen til en spennende tur sammen med DNT Sør!<br> Det arrangeres en tur rundt Bånetjønn som passer for både store og små. Turen er gradert enkel og er på 2,6 km. Vi skal møte opp kl. 11:00 ved Ravnedalen scene. Turen varer ca 2 timer med stopp for å spise:)",
+                        "Ønsker du å lære om nye studieteknikker slik at studentlivet blir lettere? Da vil dette kurset passe perfekt for deg!<br> Her skal vi gå gjennom relevante temaer for deg som student. Vel møtt!",
                     ] // legg til flere ved å skrive '"din tekst her",' merk bruk av '"' og ',' (komma)
 
-                    let eDeltar = ["45 / 100", "470 / 860", "18 / 36", "77 / 230", "52 / 100"]
+                    let eDeltar = ["45 / 100", "470 / 860", "18 / 36", "77 / 230", "52 / 100", "12 / 70"]
                     let eGglMaps = [
                         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2104.5896919858633!2d8.001566616118753!3d58.16397221094553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463802537723d541%3A0xd08854186975c9fa!2s%C3%98stsia%2C%204630%20Kristiansand!5e0!3m2!1sen!2sno!4v1635851016571!5m2!1sen!2sno",
                         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2105.8332030692927!2d7.993323716118091!3d58.14295021261065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46380260b445bed5%3A0x59903ae5a8e3b755!2sKongens%20gate%202%2C%204610%20Kristiansand!5e0!3m2!1sen!2sno!4v1635850370735!5m2!1sen!2sno",
                         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2106.154995689566!2d7.997461816117959!3d58.13750941304162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463803d1df3d37eb%3A0xd2fe178eb240ef1f!2sS%C3%B8rlandet%20Klatresenter!5e0!3m2!1sen!2sno!4v1635851481004!5m2!1sen!2sno",
                         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2104.5781203590273!2d8.000623316118723!3d58.16416781093006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638036a93677609%3A0x70adc0d32c3f0f5b!2sUiA%20Campus%20Kristiansand%20%7C%20APCOA%20PARKING!5e0!3m2!1sen!2sno!4v1635851576304!5m2!1sen!2sno",
                         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2105.0275973226367!2d7.972065416118518!3d58.15656981153188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463802effc276309%3A0xc4005234b868e6be!2sRavnedalen%20Scene!5e0!3m2!1sen!2sno!4v1635885511935!5m2!1sen!2sno",
+                        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2104.5781203590273!2d8.000623316118723!3d58.16416781093006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638036a93677609%3A0x70adc0d32c3f0f5b!2sUiA%20Campus%20Kristiansand%20%7C%20APCOA%20PARKING!5e0!3m2!1sen!2sno!4v1635851576304!5m2!1sen!2sno",
+
                     ]
                     let x = eNavn.length - 1;
 
